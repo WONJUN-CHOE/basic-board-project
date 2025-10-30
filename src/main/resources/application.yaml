@@ -17,6 +17,10 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: wonjun
     password: wonjun
+#    url: jdbc:h2:mem:testdb
+#    username: sa
+#    password: pw
+#    driver-class-name: org.h2.Driver
   jpa:
     defer-datasource-initialization: true
     hibernate.ddl-auto: create
@@ -24,7 +28,7 @@ spring:
     properties:
       hibernate.format_sql: true
       hibernate.default_batch_fetch_size: 100
-  h2.console.enabled: false
+#  h2.console.enabled: false
   sql.init.mode: always
 
 ---
